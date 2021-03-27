@@ -1,0 +1,293 @@
+@charset "UTF-8";
+
+/*------------------------*/
+/*   　　共通のスタイル      */
+/*------------------------*/
+html {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover{
+  opacity: 0.5;
+  transition: 0.2s;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  height: 100%;
+  font-family:游ゴシック;
+}
+
+.service-btn {
+  position:absolute;
+  display: block;
+  width:300px;
+  background-color:#CD0224;
+  font-weight:bold;
+  text-align:center;
+  left:38%;
+  margin:3% 0;
+  padding: 10px;
+  color:#ffffff;
+  font-size:18px;
+}
+
+/*------------------------*/
+/*         header         */
+/*------------------------*/
+#top-header {
+  height: 70px;
+  line-height: 70px;
+  position: sticky;
+  top:0;
+  background-color:#ffffff;
+  z-index:999;
+}
+
+.header-logo {
+  width: 63px;
+  height: 20px;
+  margin-left: 35px;
+  line-height: 70px;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-right: 26px;
+  font-weight:bold;
+  font-size: 16px;
+  
+}
+
+.header-nav a {
+  color: black;
+}
+
+.section{
+  height: 250px;
+  background: url(../img/mv.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section-title{
+  padding-top:8%;
+  padding-left:45%;
+  font-size:30px;
+  color:#ffffff;
+}
+
+/*------------------------*/
+/*       service          */
+/*------------------------*/
+.service{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  margin:6% 0;
+}
+
+.service-wrapper{
+  border-top:#000 1px solid;
+  margin-left:9%;
+  display: flex;
+  align-items:  start;
+  justify-content:space-between;
+  width:80%;
+  padding:1.5% 0;
+}
+
+.service-box-last{
+	border-bottom: #000 1px solid;
+}
+.service-img{
+  width:300px;
+}
+
+.service-box{
+  display:flex;
+  flex-wrap:wrap;
+  width:81%;
+}
+
+.service-title{
+  font-size:24px;
+  font-weight:bold;
+  margin-left:40px;
+}
+
+.service-txt{
+  margin-left:40px;
+}
+
+/*------------------------*/
+/*        contact         */
+/*------------------------*/
+#contact {
+  background-color:#F5F6F9;
+  height:300px;
+  text-align: center;
+}
+
+.contact-title {
+  padding-top:5%;
+  font-size:30px;
+}
+
+.contact-txt{
+  margin-top:15px;
+}
+
+/*------------------------*/
+/*        footer          */
+/*------------------------*/
+#top-footer{
+  height:60px;
+  background-color:#000;
+  padding:0 7% 0 10%;
+}
+.footer-logo{
+  color:#ffffff;
+  font-size:12px;
+  margin-top:18px;
+}
+.footer-nav li{
+  display: inline-block;
+  margin-right: 8px;
+  margin-top:18px;
+  font-size: 12px;
+}
+
+.footer-nav li a{
+  color:#ffffff;
+  padding-right:16px;
+  border-right:#ffffff 1px solid;
+}
+
+.footer-li:last-of-type {
+  border-right: none;
+}
+
+
+/*--------------------------------------*/
+/*     レスポンシブデザイン用CSS         */
+/*--------------------------------------*/
+ @media screen and (max-width: 768px){
+  #hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    top: 15px;
+    right: 20px;
+    transition: 0.4s;
+  }
+
+  #hamburger span {
+    position: absolute;
+    left: 2px;
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: #000;
+    transition: 0.8s;
+  }
+
+  #hamburger span:nth-of-type(1) {
+    top: 10px;
+  }
+
+  #hamburger span:nth-of-type(2) {
+    top: 20px; 
+  }
+
+  #hamburger span:nth-of-type(3) {
+    top: 30px; 
+  }
+
+  .header-nav {
+    display: none; 
+  }
+
+  .header-logo{
+    margin-top:20px;
+  }
+
+  .section-title{
+  padding-top:28%;
+  padding-left:33%;
+  }
+
+.service{
+  width:100%;
+  display:flex;
+  flex-wrap:wrap;
+  margin:6% 0;
+}
+
+.service-wrapper{
+  margin:0 7%;
+  display:block;
+  width:100%;
+  padding:5% 0;
+}
+
+.service-img{
+  width:100%;
+}
+
+.service-box{
+  width:100%;
+}
+
+.service-title,
+.service-txt{
+  margin-left:0px;
+} 
+ 
+  #contact {
+  padding:0 7%;
+  }
+
+  .service-btn {
+  width:80%;
+  left:8%;
+  margin-top:10%;
+}
+
+#top-footer{
+  height:auto;
+  text-align: center;
+  padding:0 0 5% 0;
+  
+}
+.footer-logo{
+  width:100%;
+}
+.footer-nav li{
+  width:100%;
+  margin:0.5% 0;
+}
+
+.footer-nav li a{
+   border-right:none;
+}
+
+} 

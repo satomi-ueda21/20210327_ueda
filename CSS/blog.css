@@ -80,7 +80,7 @@ body {
   color: black;
 }
 
-#section{
+.section{
   height: 270px;
   background: url(../img/mv.png) no-repeat;
   background-size: cover;

@@ -397,7 +397,7 @@ body {
 .catchcopy-mini{
   position: absolute;
   top: 65%;
-  left:auto;
+  left:25%;
   font-size: 18px;
   letter-spacing: -0.5px;
 }

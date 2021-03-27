@@ -80,15 +80,15 @@ body {
 }
 
 .section{
-  height: 250px;
+  height: 270px;
   background: url(../img/mv.png) no-repeat;
   background-size: cover;
   background-position: center;
+  text-align:center;
 }
 
 .section-title{
   padding-top:8%;
-  padding-left:45%;
   font-size:30px;
   color:#ffffff;
 }
@@ -232,7 +232,7 @@ body {
 
   .section-title{
   padding-top:28%;
-  padding-left:33%;
+  padding-left:0%;
   }
 
 .service{
